@@ -1,0 +1,19 @@
+server:
+  port: 9527
+  servlet:
+    context-path: /
+    encoding:
+      enabled: true
+      charset: utf-8
+      force: true
+  shutdown: graceful
+
+spring:
+  profiles:
+    active: local
+  application:
+    name: api
+  datasource:
+    url: jdbc:mysql://localhost:3306/web-ssh-client?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: root
